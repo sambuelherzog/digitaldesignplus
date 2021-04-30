@@ -1,22 +1,20 @@
+body{
+margin: none;
 
-
-.section {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
+.section {
+    min-height: 100vh;
+}
+
 
 .grid {
     display: grid;
-    grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
     flex: 1;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+
 }
 
 @media screen and (max-width: 479px) {
