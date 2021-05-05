@@ -6,6 +6,10 @@ margin: none;
     min-height: 100vh;
 }
 
+img{
+    max-width: 100%;
+}
+
 
 .grid {
     display: grid;
@@ -17,7 +21,7 @@ margin: none;
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1200px) {
     .grid {
         grid-template-columns: 1fr;
     }
