@@ -1,10 +1,80 @@
 body{
-margin: none;
-
+margin: 0;
+padding: 0;
+font-family: 'EB Garamond',serif;
+line-height: 1;
+text-align: center;
 }
 .section {
     min-height: 100vh;
 }
+
+p{
+    margin: 0;
+}
+
+.nav{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    display: grid;
+    justify-items: end;
+    align-items: start;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    position: sticky;
+    top: 0%;
+  }
+
+.title {
+    width: 100px;
+    height: 100px;
+    border-radius: 100vw;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    width:100px;
+    height: 100px;;
+    padding: 8px 16px ;
+    background-color: lightgray;
+    border: none;
+    border-radius: 100vw;
+    font-family: 'EB Garamond',serif;
+    font-size: 1rem;
+    line-height: 1;
+
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+
 
 img{
     max-width: 100%;
