@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
 margin: 0;
 padding: 0;
@@ -5,6 +9,12 @@ font-family: 'EB Garamond',serif;
 line-height: 1;
 text-align: center;
 }
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .section {
     min-height: 100vh;
 }
@@ -16,18 +26,17 @@ p{
 .nav{
     border-bottom: 1px solid rgb(238, 238, 238);
     background-color: white;
-    padding: 5px 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
     display: grid;
     justify-items: end;
     align-items: start;
     grid-auto-columns: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     position: sticky;
     top: 0%;
+    z-index: 1;
   }
 
 .title {
@@ -86,57 +95,99 @@ img{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     flex: 1;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
 
+}
+
+
+
+.show {
+    display: none;
+    justify-content: space-around;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.guide {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    width: 10px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+
+.guide:nth-child(1){
+    position: relative;
+    width: 10px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+.guide:nth-child(2) {
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: 10px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+
+
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#ten,
+#eleven {
+    justify-self: end;
 }
 
 @media screen and (max-width: 1200px) {
     .grid {
         grid-template-columns: 1fr;
     }
-}
 
-#one {
-    align-self: stretch;
-}
+    .guide:nth-child(1) {
+        display: none;
+    }
 
-#two {
-    justify-self: end;
-}
+   button,
+   [type="button"],
+   [type="reset"],
+   [type="submit"] {
+       -webkit-appearance: button;
+       display: none;
+   }
 
-#three {
-    justify-self: end;
-}
+    .nav{
+        grid-template-columns: 1fr;
 
-#four {
-    justify-self: end;
-}
+    }
 
-#five {
-    justify-self: end;
-}
-
-#six {
-    justify-self: end;
-}
-
-#seven {
-    justify-self: end;
-}
-
-#eight {
-    justify-self: end;
-}
-
-#nine {
-    justify-self: end;
-}
-
-#ten {
-    justify-self: end;
-}
-
-#eleven {
-    justify-self: end;
+    
 }

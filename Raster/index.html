@@ -15,12 +15,12 @@
 <body>
     <section class="nav">
          <p class="title">The Garden <br> of Earthly <br> Delights</p>
-        <button  id="button"  type="button" onclick="document.getElementById('grid').style.cssText = 'display: block; position: absolute'">Switch Layout</button>
+        <button type="button" onclick="document.getElementById('show').style.cssText = 'display: flex;'">Show Grid</button>
     </section>
 
     <section>
-        <div class="grid" id="grid">
-            <img src="images/Ausschnitt-0.png"  id="one" alt="The Garden of Earthly Delights by Bosch High">
+        <div class="grid">
+            <img src="images/Ausschnitt-0.png"  alt="The Garden of Earthly Delights by Bosch High">
             <img src="images/Ausschnitt-1.png"  alt="The Garden of Earthly Delights by Bosch High">
             <img src="images/Ausschnitt-2.png"  id="two" alt="The Garden of Earthly Delights by Bosch High">
             <img src="images/Ausschnitt-4.png"  id="three" alt="The Garden of Earthly Delights by Bosch High">
@@ -42,5 +42,15 @@
             <img src="images/Ausschnitt-18.png"  id="eleven" alt="The Garden of Earthly Delights by Bosch High">
         </div>
     </section>
+
+    <div class="show" id="show">
+        <div class="guide"></div>
+        <div class="guide"></div>
+        <div class="guide"></div>
+    </div>
+    
+
+    
 </body>
 </html>
+
